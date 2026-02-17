@@ -14,6 +14,7 @@ const showAllProducts =(items)=>{
         div.className = "";
 
         div.innerHTML = `
+     
         
         <div class="card bg-base-100  shadow-sm  space-x-4 mb-9 h-[470px] pt-6">
   <figure>
@@ -72,12 +73,53 @@ const showAllProducts =(items)=>{
 const getAllProducts =()=>{
      fetch(url)
 .then(res=>res.json()) 
-.then(data => {console.log(data)
+.then(data => {console.log(data);
     showAllProducts(data);
 }
     
-);
+); 
 
-}
+};
 
-// showAllProducts();
+const loadCategory=()=>{ 
+
+    fetch("https://fakestoreapi.com/products/categories")
+    .then(res => res.json())
+    .then(data=>{ console.log(data)
+        displayCategories(data);
+
+    });
+
+
+
+}; 
+ 
+const displayCategories = (categories) =>{
+    const categoryContaine =document.getElementById("categories");
+   categoryContaine.innerHTML=" ";
+  
+   
+   
+
+    categories.forEach(categori=>{
+          const btnDiv = document.createElement("div");
+
+          btnDiv.innerHTML=` 
+
+          <button class="btn btn-outline btn-primary">${categori}</button>
+        
+          `;
+
+             categoryContaine.append(btnDiv);
+
+    })
+
+
+
+} ;
+
+loadCategory();
+
+
+
+
