@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Mission Restart A6</title> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+
+     <header class=" bg-base-100 shadow-sm">
+
+        <div class="navbar  max-w-[1430px] mx-auto">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+       <li><a>Home</a></li>
+    
+      <li><a >Products</a></li>
+      <li><a>About</a></li>
+      <li><a>Contact</a></li>
+      </ul>
+    </div>
+    <a class="text-[#0000FF] font-semibold">SwitCart</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="./index.html">Home</a></li>
+    
+      <li><a href="./products.html">Products</a></li>
+      <li><a>About</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">  
+<i class="fa-solid fa-cart-shopping"></i>
+  </div>
+</div>
+    </header>  
+    <main>
+       <section>
+         <h1 class="text-2xl font-bold text-center mt-20">Our Products</h1>
+        <div class="mt-10 text-center space-x-3">
+            
+        <button  onclick="getAllProducts()" class="btn btn-outline rounded-2xl">All</button>
+        <button class="btn btn-outline btn-primary rounded-2xl">Electronics</button>
+       <button class="btn btn-outline btn-secondary rounded-2xl">Jewelery</button>
+       <button class="btn btn-outline btn-accent rounded-2xl">Men's Clothing</button>
+       <button class="btn btn-outline btn-info rounded-2xl">Women's Clothing</button> 
+       </section> 
+
+
+       <section class=" grid grid-cols-4 space-x-8  mt-45 max-w-[1430px] mx-auto" id="items">  
+
+  
+
+ 
+
+       </section> 
+
+    </main>  
+
+
+    
+
+
+
+
+
+
+
+
+
+    <footer class=" bg-black min-w-max  mt-16 ">
+<div class="ml-36 text-white footer  sm:footer-horizontal p-10  "> 
+
+    <nav>
+   <h1   class="text-[#0000FF] font-semibold text-xl">SwiftCart</h1>
+   <p class="pt-5">Your one-stop shop for all your fashion <br> and lifestle needs.Quality products,fast <br>delivery , and excellent support.</p>
+  </nav>
+  <nav>
+    <h6 class="footer-title">QUICK LINKS</h6>
+    <a class="link link-hover">Home</a>
+    <a class="link link-hover">Products</a>
+    <a class="link link-hover">About</a>
+    <a class="link link-hover">Contact</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Support</h6>
+    <a class="link link-hover">FAQ</a>
+    <a class="link link-hover">Shipping</a>
+    <a class="link link-hover">Returns</a>
+    <a class="link link-hover">Privacy policy</a>
+  </nav>
+  <form>
+    <h6 class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</h6>
+    <p>The latest news, article and resources <br> sent your inbox weekly.</p>
+    <fieldset class="w-80">
+    
+      <div class="join text-black">
+        <input
+          type="text"
+          placeholder="Enter your email"
+          class="input input-bordered join-item" />
+        <button class="btn btn-primary join-item">Subscribe</button>
+      </div> 
+    </fieldset>
+  </form>
+  
+
+</div> 
+  
+
+
+
+
+
+
+
+ 
+  
+
+
+
+ 
+
+
+</footer> 
+
+
+<script src="./script//products.js"></script>
+    
+</body>
+</html>
